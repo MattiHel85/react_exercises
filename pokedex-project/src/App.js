@@ -1,13 +1,20 @@
+import React, { Component } from 'react';
+import Pokecard from './Pokecard';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Pokedex Project</h1>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Pokecard 
+          id={4}
+          name="Charmander"
+          exp = {62}
+        />
+      </div>
+    );
+  }
+  
 }
 
 export default App;
